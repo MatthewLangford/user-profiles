@@ -28,7 +28,7 @@ number with your selected port number.
 ```javascript
 var corsOptions = {
 	origin: 'http://localhost:8999'
-};
+}; 
 ```
 
 Now we can call `app.use(cors(corsOptions));` and we will only be accepting requests from our selected origin. It is also worth mentioning that CORS doesn't

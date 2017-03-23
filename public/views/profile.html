@@ -13,16 +13,17 @@
   <div class="container">    
     <div class="profile"> 
       <ul>
-        <li class="bolded">{{ currentUser.name }}</li>
+        <li class="bolded">{{ currentUser }}</li>
       </ul>
     </div>  
 
 
     <div class="friends">
-      <ul ng-repeat="friend in friends">
+      <ul ng-repeat="friend in currentFriends">
         <img ng-src="{{ friend.pic }}">
         <li class="bolded">{{ friend.name }}</li>
         <li>{{ friend.status }}</li>
+        <button ng-click="removeFriend(friend.name)">Remove</button>
         <hr>
       </ul>   
     </div>
