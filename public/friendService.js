@@ -17,6 +17,6 @@ angular.module('userProfiles')
     };
 
     this.removeFriend = (name) =>{
-        
+        return $http.put('/api/profiles', {name: name});
     }
 });

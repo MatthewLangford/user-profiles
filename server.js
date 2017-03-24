@@ -25,7 +25,7 @@ app.post('/api/login', userCtrl.login);
 
 app.get('/api/profiles', profileCtrl.getFriendsProfile);
 
-
+app.put('/api/profiles', )
 
 
 
